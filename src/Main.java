@@ -1,7 +1,7 @@
 public class AdjMatrix {
     int vertices; //No  of vertices
     int[][] matrix; // 2d matrix
-
+    int a;
     AdjMatrix(int vertices){
         this.vertices = vertices;
         matrix = new int[vertices][vertices];
