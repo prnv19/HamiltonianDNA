@@ -1,3 +1,7 @@
+/*
+    Java Program to Implement Hamiltonian Cycle Algorithm
+ */
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -63,6 +67,8 @@ public class HamiltonianCycle
 
                 /* remove path */
                 path[--pathCount] = -1;            // Backtracing
+                System.out.println("Deleted");
+                System.out.println(Arrays.toString(path));
                 System.out.println("BACK TRACKED ");
 
             }
