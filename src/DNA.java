@@ -22,10 +22,7 @@ public class DNA {
         while(i<vertices){
             int j = 0;
             while(j<vertices){
-                if( kmer.get(i).substring(1,3).equals(kmer.get(j).substring(0,2))){
-                    //System.out.println("Match");
-                    //System.out.println(obj.kmer.get(i));
-                    //System.out.println(obj.kmer.get(j));
+                if( kmer.get(i).substring(1,3).equals(kmer.get(j).substring(0,2)) && i!=j){
                     adj[i][j] = 1;
                 }
                 j++;
