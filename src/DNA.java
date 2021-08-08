@@ -87,6 +87,7 @@ public class DNA {
     }
 
 
+
     public static void main(String[] args){
 
         DNA obj = new DNA("ATGGCGTGCA");

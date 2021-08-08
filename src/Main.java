@@ -7,6 +7,7 @@ public class Main{
         dna.display_adj();
         dna.show_nodes();
 
+
         hp.findHamiltonianPath(dna.adj);
         dna.construct_genome(hp.path);
 
