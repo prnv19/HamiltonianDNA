@@ -31,6 +31,7 @@ public class HamiltonianCycle
             display();
         }
     }
+
     /* function to find paths recursively */
     public void solve(int vertex) throws Exception
     {
@@ -71,6 +72,7 @@ public class HamiltonianCycle
             }
         }
     }
+
     /* function to check if path is already selected */
     public boolean isPresent(int v)
     {

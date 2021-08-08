@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 /*
  **   Java Program to generate k-mers and graph from a sequence
  */
