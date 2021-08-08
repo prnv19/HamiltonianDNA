@@ -5,15 +5,14 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-/* Class HamiltonianCycle */
 public class HamiltonianPath
 {
     private int V, pathCount;
-    private int[] path;
+    public int[] path;
     private int[][] graph;
 
     /* Function to find cycle */
-    public void findHamiltonianCycle(int[][] g)
+    public void findHamiltonianPath(int[][] g)
     {
         V = g.length;
         int END = 0;
@@ -134,6 +133,6 @@ public class HamiltonianPath
             for (int j = 0; j < V; j++)
                 graph[i][j] = scan.nextInt();
 
-        hc2.findHamiltonianCycle(graph);
+        hc2.findHamiltonianPath(graph);
     }
 }

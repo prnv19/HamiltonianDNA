@@ -7,6 +7,7 @@ public class DNA {
     String seq;
     int[][] adj;
     int vertices;
+    StringBuilder genome = new StringBuilder();
 
     DNA(String seq){
         this.seq = seq;
@@ -67,9 +68,27 @@ public class DNA {
         System.out.println();
         System.out.println();
     }
+    public void construct_genome(int[] path){
+
+        for(int i=0;i < path.length;i=i+2){
+            if(i == path.length-1){
+                genome.append(kmer.get(path[i]));
+            }
+            else if(i+1 == path.length-1){
+
+                genome.append(kmer.get(path[i]).substring(0,2));
+                genome.append(kmer.get(path[i+1]).substring(1,3));
+            }
+            else {
+                genome.append(kmer.get(path[i]).substring(0,2));
+            }
+        }
+        System.out.println("Constructed Genome : "+genome);
+    }
 
 
     public static void main(String[] args){
+
         DNA obj = new DNA("ATGGCGTGCA");
         System.out.println(obj.seq);
         System.out.println(obj.kmer);
