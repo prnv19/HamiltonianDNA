@@ -99,7 +99,6 @@ public class DNA {
         System.out.println("Constructed Genome : "+genome);
     }
 
-
     public static void main(String[] args){
 
         DNA obj = new DNA("ATGGCGTGCA");

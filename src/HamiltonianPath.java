@@ -11,7 +11,6 @@ public class HamiltonianPath
     public int[] path;
     private int[][] graph;
 
-
     /* Function to find cycle */
     public void findHamiltonianPath(int[][] g)
     {

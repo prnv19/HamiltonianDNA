@@ -1,7 +1,6 @@
 /*
     Java Program to Implement Hamiltonian Cycle Algorithm
  */
-
 import java.util.Scanner;
 import java.util.Arrays;
 
