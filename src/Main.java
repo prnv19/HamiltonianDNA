@@ -1,6 +1,6 @@
 public class Main{
     public static void main(String[] args){
-        DNA dna = new DNA("ATGGCGTGCA");
+        DNA dna = new DNA("TAATGCCATGGGATGTT");
         HamiltonianPath hp = new HamiltonianPath();
 
         dna.generate_adj();
