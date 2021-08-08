@@ -5,7 +5,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-/* Class HamiltonianCycle */
 public class HamiltonianCycle
 {
     private int V, pathCount;
@@ -53,23 +52,22 @@ public class HamiltonianCycle
                 /* remove connection */
                 graph[vertex][v] = 0;
                 graph[v][vertex] = 0;
-                System.out.println(" REMOVED " + vertex + " --- " + v );
+                System.out.println("\n REMOVED EDGE " + vertex + " --- " + v );
 
                 /* if vertex not already selected  solve recursively */
                 display();
                 if (!isPresent(v))
-                    solve(v);       // IF NOT REPEATED , IT GOES RECURSIVE  ELSE FOR LOOP
+                    System.out.println(v);
+                solve(v);       // IF NOT REPEATED , IT GOES RECURSIVE  ELSE FOR LOOP
 
                 /* restore connection */
                 graph[vertex][v] = 1;
                 graph[v][vertex] = 1;
-                System.out.println(" RESTORED " + vertex + " --- " + v );
+                System.out.println("\n RESTORED EDGE " + vertex + " --- " + v );
 
                 /* remove path */
                 path[--pathCount] = -1;            // Backtracing
-                System.out.println("Deleted");
-                System.out.println(Arrays.toString(path));
-                System.out.println("BACK TRACKED ");
+                System.out.println(" BACK TRACKED ");
 
             }
         }
@@ -78,9 +76,9 @@ public class HamiltonianCycle
     public boolean isPresent(int v)
     {
         for (int i = 0; i < pathCount - 1; i++) {
-            System.out.println("A   " + (pathCount - 1) +"  " + i );
+            System.out.println("Checking if path " + (pathCount - 1) +" is repetation of :    " + i );
             if (path[i] == v) {
-                System.out.println("B   " + path[i] );
+                System.out.println(" \n " + path[i]  + " is repeated     ");
                 return true;
             }}
         return false;

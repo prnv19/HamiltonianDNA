@@ -68,6 +68,7 @@ public class DNA {
         System.out.println();
         System.out.println();
     }
+
     public void construct_genome(int[] path){
 
         for(int i=0;i < path.length;i=i+2){
