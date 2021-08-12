@@ -12,7 +12,7 @@ public class HamiltonianPath
     public int[] path;
     private int[][] graph;
 
-    /* Function to find cycle */
+    /* Function to find path */
     public void findHamiltonianPath(int[][] g)
     {
         V = g.length;
