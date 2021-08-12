@@ -41,6 +41,8 @@ public class DNA {
         }
     }
 
+
+    //abcd
     //Function that displays the adjacency matrix
     public void display_adj(){
         for(int i = 0;i<vertices;i++){
